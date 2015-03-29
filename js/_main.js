@@ -103,7 +103,7 @@ function myFunction(){
 		$('#nav-list').css('text-align','left');
 		$('#nav-list').css('margin','0 0 0 0');
 		$('#nav-list').css('padding','0.2px');
-		$('#nav-list').css('background-color','#b0c4de');
+		$('#nav-list').css('background-color','#fff');
 		$('#nav-list').css('box-shadow','0px 0px 5px grey');
 		$('#nav-list').css('top','10px');
 		
