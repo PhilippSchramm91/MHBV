@@ -53,17 +53,22 @@
         <![endif]-->
        	
        	<header class="entry-header">
-        	<div class="inner">
+        	<div class="inner" id="nav-inner" onmouseleave="navigation(false)">
 				<nav>
 					<ul id="nav-list">
-						<li><a class="nav" href="#slide-start" title="Start">Start</a></li>
-						<li><a class="nav" href="#slide-ueber_uns" title="Ueber-uns">Über uns</a></li>
-						<li><a class="nav" href="#slide-impressionen" title="Impressionen">Impressionen</a></li>
-						<li><a class="nav" href="#slide-veranstaltungen" title="Veranstaltungen">Veranstaltungen</a></li>
-						<li><a class="nav" href="#slide-vegan" title="Vegan">Vegan</a></li>
-						<li><a class="nav" href="#slide-kontakt" title="Kontakt">Kontakt</a></li>
+						<li><a class="nav" href="#slide-start" title="Start" onclick="navigation(false)">Start</a></li>
+						<li><a class="nav" href="#slide-ueber_uns" title="Ueber-uns" onclick="navigation(false)">Über uns</a></li>
+						<li><a class="nav" href="#slide-impressionen" title="Impressionen" onclick="navigation(false)">Impressionen</a></li>
+						<li><a class="nav" href="#slide-veranstaltungen" title="Veranstaltungen" onclick="navigation(false)">Veranstaltungen</a></li>
+						<li><a class="nav" href="#slide-vegan" title="Vegan" onclick="navigation(false)">Vegan</a></li>
+						<li><a class="nav" href="#slide-kontakt" title="Kontakt" onclick="navigation(false)">Kontakt</a></li>
 					</ul>
 				</nav>
+			</div>
+			<div id="nav-btn" onclick="navigationbtn()" onmouseenter="navigationbtneffect(true)" onmouseleave="navigationbtneffect(false)">
+				<div id="line_1"></div>
+				<div id="line_2"></div>
+				<div id="line_3"></div>
 			</div>
 		</header>
        	
@@ -164,11 +169,11 @@
 			    		<div class="hsContent">
 							<h2>Kontakt</h2>
 							<p id="kontak_head">MY HEART BEATS VEGAN GmbH</p>
-							<p id="kontak_head_2">V E G A N   F A S T F O O D&nbsp&nbsp&&nbsp&nbspE V E N T C A T E R I N G</p>
+							<p id="kontak_head_2">VEGAN FASTFOOD & EVENTCATERING</p>
 							<p id="kontak_title1">Für Veranstalter und Organisatoren:</p>
-							<p id="kontak_person1"><b>David Specht</b>   |   <a href="mailto:david.specht@mhbv.de">david.specht@mhbv.de</a>   |   Mobil 0176 990 84 103</p>
+							<p id="kontak_person1"><b>David Specht</b>   |   <a href="mailto:david.specht@mhbv.de">david.specht@mhbv.de</a>   |   Mobil&nbsp0176&nbsp990&nbsp84&nbsp103</p>
 							<p id="kontak_title2">Für Lieferanten, Händler und Geschäftskunden:</p>
-							<p id="kontak_person2"><b>Daniel Kretz</b>   |   <a href="mailto:daniel.kretz@mhbv.de">daniel.kretz@mhbv.de</a>   |   Mobil 0176 61 400 995</p>
+							<p id="kontak_person2"><b>Daniel Kretz</b>   |   <a href="mailto:daniel.kretz@mhbv.de">daniel.kretz@mhbv.de</a>   |   Mobil&nbsp0176&nbsp61&nbsp400&nbsp995</p>
 						</div>
 		        	</div>
 		    	</div>
@@ -207,125 +212,11 @@
 		        	</div>
 		    	</div>
 		    </section>	
-			<!-- Impressum 
-			<section id="slide-impressum">
-	        	<div class="bcg" data-bottom-top="background-color:rgb(167,253,22);" data-top="background-color:rgb(240,250,240);" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-impressum">
-		        	<div class="hsContainer">
-			    		<div class="hsContent" data--25p-top="opacity: 0;" data-center="opacity: 1" data--80p-top="opacity: 0;" data-anchor-target="#slide-impressum">
-				    		<h2>Impressum</h2>
-							<p>VEGAN ist in Deutschland schon lange kein Fremdwort mehr. Aus ganz unterschiedlichen Gründen bemühen sich immer mehr Menschen, ihre Ernährung zunehmend auf pflanzliche Produkte umzustellen.Und nie wurde es uns leichter gemacht! Nie war die Auswahl an pflanzlichen Alternativen größer, sogar im Discounter sind Räuchertofu und Sojamilch heute fester Bestandteil im Sortiment.Was "VEGAN" eigentlich bedeutet, welche Vorteile eine vegane Ernährung bzw. Lebensweise bieten kann und welche Lebensmittel oftmals wider Erwarten nicht vegan sind, haben wir hier für euch zusammengetragen.</p>
-			    		</div>
-		        	</div>
-	        	</div>
-		    </section>-->
 			
-			
-			
-			
-			<!-- Veranstaltungen -
-		    <section id="slide-veranstaltungen" class="homeSlide homeSlideTall2">
-		    	<div class="bcg">
-			    	&nbsp;
-		    	</div>
-		    	<div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-veranstaltungen">
-			    	<div class="hsContainer">
-				    	<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-veranstaltungen">
-				    		<h2>Veranstaltungen</h2>
-				    		<p>Showcase your beautiful images before blurring the scene and fading in your headline.</p>
-			    		</div>
-			    	</div>
-		    	</div>
-		    </section>
-			<!--
-		    <section id="slide-2">
-		    	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
-			    	<div class="hsContainer">
-			    		<div class="hsContent">
-				    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Fade me in and out</h2>
-				    		<p data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Here we are changing the background color from blue to black. Text is fading in at 206 pixels from the bottom and fading out 106 pixels from the top.</p>
-			    		</div>
-		        	</div>
-		    	</div>
-		    </section>
-			-->
-			<!-- Über uns -->
-			<!--<section id="slide-3" class="homeSlide">
-				<div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
-					<div class="hsContainer">
-						<div class="hsContent">
-							<div class="plaxEl" data-106-top="opacity: 0" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"  data-anchor-target="#slide-3">
-								<h2>Fixed element fading in and out</h2>
-								<p><span class="bgBlack">Text is fixed 206 pixels from the top, while the background is moving 40 pixels to the left.</span></p>
-								<p><span class="bgBlack">Or did you think that the scooter is driving off?</span></p>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</section>
-		    
-			<!-- Termine -->
-			<!--<section id="slide-4" class="homeSlide homeSlideTall">
-				<div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4">
-					<div class="curtainContainer">
-			
-						<div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
-						<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
-							<h2>Curtain effect while you scroll</h2>
-						</div>
-						
-					</div>
-				</div>
-			</section>
-		    
-			<!-- Vegan -->
-		    <!--<section id="slide-5" class="homeSlide homeSlideTall2">
-		    	<div class="bcg">
-			    	&nbsp;
-		    	</div>
-		    	<div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-5">
-			    	<div class="hsContainer">
-				    	<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-5">
-				    		<h2>Fixed element fading in and out</h2>
-				    		<p>Showcase your beautiful images before blurring the scene and fading in your headline.</p>
-			    		</div>
-			    	</div>
-		    	</div>
-		    </section>
-			
-			<!-- Kontakt / Impressum -->
-		    <!--<section id="slide-5" class="homeSlide homeSlideTall2">
-		    	<div class="bcg">
-			    	&nbsp;
-		    	</div>
-		    	<div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-5">
-			    	<div class="hsContainer">
-				    	<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-5">
-				    		<h2>Fixed element fading in and out</h2>
-				    		<p>Showcase your beautiful images before blurring the scene and fading in your headline.</p>
-			    		</div>
-			    	</div>
-		    	</div>
-		    	<div class="bcg bcg3" data-300-bottom="opacity: 0;" data-100-bottom="opacity: 1;" data-anchor-target="#slide-5">
-			    	<div class="hsContainer">
-				    	<div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5">
-				    		<h2>The End</h2>
-				    		<p>Not enough parallax goodness? Let me know in the comments or hit me up at <a href="https://www.twitter.com/ihatetomatoes" target="_blank">@ihatetomatoes</a>.</p>
-			    		</div>
-			    	</div>
-		    	</div>
-		    </section>-->
-		    
-			
-			
-			
-			
-			
-			
-			
+
 		</main>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/imagesloaded.js"></script>
         <script src="js/skrollr.js"></script>
