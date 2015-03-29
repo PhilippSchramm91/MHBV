@@ -2,7 +2,7 @@
 
 
 $(window).resize(function() {
-	myFunction();
+	myFunction(); 
 });
 
 function navigation(p){
