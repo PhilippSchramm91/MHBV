@@ -1,6 +1,3 @@
-/*! viewportSize | Author: Tyson Matanich, 2013 | License: MIT */
-
-
 $(window).resize(function() {
 	myFunction();
 });
