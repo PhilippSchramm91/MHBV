@@ -226,6 +226,43 @@ a:active {
 	background-image:url('../img/1.jpg');
 	text-align: justify;
 }
+.impressionen{
+	background-color:#ffffff;
+	background: rgba(255, 255, 255, .8);
+	padding: 5px 10px 10px 10px;
+	border-radius:5px;
+}
+.impressionen img{
+	margin:2%;
+	width:45%;
+}
+
+@media 
+only screen and (max-width: 1000px),
+(min-device-width: 1005px) and (max-device-width: 1000px)  {
+
+	.impressionen img{
+		margin:2.5%;
+		width:95%;
+	}
+}
+
+/* Slide - Shop */
+#slide-shop .bcg {
+	background: none;
+	background-color: #ffffff; 
+	text-align: center;
+}
+
+#mug1{
+	width:25%;
+	margin:1%;
+}
+
+#mug2{
+	width:57%;
+	margin:1%;
+}
 
 /* Slide 4 - Veranstaltungen*/
 #slide-veranstaltungen .bcg {
