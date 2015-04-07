@@ -5,8 +5,57 @@ $(window).resize(function() {
 	myFunction();
 });
 
+function vegan(p){
+	
+	//alert(p);
+	
+	var container=document.getElementsByClassName('vegan');
+	var anzahl=container.length;
+	var aktiv;
+	var neu;
+	
+	for (i = 0; i < container.length; i++) {
+		if(container[i].style.display=="block"){
+			aktiv=i;
+		}
+	}
+	
+	//alert(aktiv);
+	//alert(container.length);
+	//alert(container[0].style.display);
+	
+	
+	
+	if(p==true){
+		//Wechsel nach rechts
+		if(aktiv<container.length-1){
+			neu=aktiv+1;
+		}else{
+			neu=0;
+		}
+		
+	}else{
+		//Wechsel nach links
+		if(aktiv==0){
+			neu=container.length-1;
+		}else{
+			neu=aktiv-1;
+		}
+	}
+
+	container[aktiv].style.display="none";
+	container[neu].style.display="block";
+
+	//Um Fenster anzupassen falls neuer Teil länger oder kürzer ist
+	var s = skrollr.init();
+	s.refresh($("#slide-vegan div"));
+	myFunction();
+	window.location.href="#slide-vegan";
+}
+
+
 function navigation(p){
-	if($window.width()<=850){
+	if($window.width()<=1000){
 		if(p==true){
 			//Navigation ist sichtbar
 			$('.entry-header .inner').css('display','block');
@@ -44,9 +93,13 @@ function navigationbtneffect(p){
 
 function myFunction(){
 	
+	
 	//GetParameter
 	winW = $window.width();
 	winH = $window.innerHeight();
+	win = $window.height();
+	
+	console.log("myFunction; innerHeight:"+winH+"; height"+win);
 	
 	
 	$('.bcg').css('min-height', winH);
@@ -55,14 +108,14 @@ function myFunction(){
 
 	
 	//Menü abhängig von der Größe formatieren
-	if(winW>850){
+	if(winW>1000){
 		//Normales Menü
 		$('#nav-btn').css('display','none');
 		
 		$('.entry-header .inner').css('display','block');
 		//$('.entry-header .inner').css('text-align','right');	
 		$('.entry-header .inner').css('margin','0 auto 20px auto');
-		$('.entry-header .inner').css('width','800px');
+		$('.entry-header .inner').css('width','1000px');
 		//$('.entry-header .inner').css('min-width','150px');
 		$('.entry-header .inner').css('height','0');
 		$('.entry-header .inner').css('position','static');
@@ -103,7 +156,7 @@ function myFunction(){
 		$('#nav-list').css('text-align','left');
 		$('#nav-list').css('margin','0 0 0 0');
 		$('#nav-list').css('padding','0.2px');
-		$('#nav-list').css('background-color','#b0c4de');
+		$('#nav-list').css('background-color','#fff');
 		$('#nav-list').css('box-shadow','0px 0px 5px grey');
 		$('#nav-list').css('top','10px');
 		
@@ -161,30 +214,6 @@ function myFunction(){
 		        //console.log(data.curTop);
 		    }
 		});
-		
-		
-
-		
-		/*
-		$slide = $('.homeSlide');
-		$slideTall = $('.homeSlideTall');
-		$slideTall2 = $('.homeSlideTall2');
-		// Get window size
-	    winH = $window.height();
-	    
-	    // Keep minimum height 550
-	    if(winH <= 550) {
-			winH = 550;
-		} 
-	    
-	    // Resize our slides
-	   // $slide.height(winH);
-	    $slide.height(winH);
-	    $slideTall.height(winH*2);
-	    $slideTall2.height(winH*3);
-	    
-	    // Refresh Skrollr after resizing our sections
-	    s.refresh($('.homeSlide'));*/
 	    
 	}
 		
