@@ -50,7 +50,47 @@ function vegan(p){
 	window.location.href="#slide-vegan";
 }
 
+function impressionen(p){
+	
+	//alert(p);
+	
+	var container=document.getElementsByClassName('impressionen');
+	var anzahl=container.length;
+	var aktiv;
+	var neu;
+	
+	for (i = 0; i < container.length; i++) {
+		if(container[i].style.display=="block"){
+			aktiv=i;
+		}
+	}
+	
+	if(p==true){
+		//Wechsel nach rechts
+		if(aktiv<container.length-1){
+			neu=aktiv+1;
+		}else{
+			neu=0;
+		}
+		
+	}else{
+		//Wechsel nach links
+		if(aktiv==0){
+			neu=container.length-1;
+		}else{
+			neu=aktiv-1;
+		}
+	}
 
+	container[aktiv].style.display="none";
+	container[neu].style.display="block";
+
+	//Um Fenster anzupassen falls neuer Teil länger oder kürzer ist
+	var s = skrollr.init();
+	s.refresh($("#slide-impressionen div"));
+	myFunction();
+	window.location.href="#slide-impressionen";
+}
 function navigation(p){
 	if($window.width()<=1000){
 		if(p==true){
