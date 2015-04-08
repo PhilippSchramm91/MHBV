@@ -16,6 +16,12 @@ body {
 	font-family: Verdana,sans-serif;
 }
 
+#skrollr-body {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
 
 ::-moz-selection {
     background: #420056;
