@@ -22,14 +22,11 @@ body {
     height: 100%;
 }
 
-<<<<<<< HEAD
 .skrollr-mobile{
     overflow: hidden;
 	height:100%;
 }
 
-=======
->>>>>>> gh-pages
 
 ::-moz-selection {
     background: #420056;
@@ -86,18 +83,12 @@ textarea {
    Parallax Scroll
    ========================================================================== */
 body, html {
-<<<<<<< HEAD
 	min-height: 100%;
 	background-color: #fff;
     margin: 0;
     padding: 0;
     width: 100%;
 	overflow-x:hidden;
-=======
-	height: 100%;
-	min-height: 100%;
-	background-color: #000000;
->>>>>>> gh-pages
 }
 
 .no-js {
@@ -130,10 +121,7 @@ main {
 	background-size: cover;
 	min-height: 100%;
 	width: 100%;
-<<<<<<< HEAD
 	position:relative;
-=======
->>>>>>> gh-pages
 }
 
 /* Navigation */
@@ -160,7 +148,6 @@ main {
 
 .entry-header #nav-btn{
 	display:none;
-<<<<<<< HEAD
 	background-color: #99ff00; 
 	margin: 0 0 0 0;
 	width: 90px;
@@ -192,50 +179,6 @@ main {
 #nav-list {
     margin: 0 0 0 55px; 
 	padding: 0.6em;
-=======
-	background-color: #fff; 
-	border: 2px solid #99FF00;
-	border-radius: 5px;
-	margin: 0 0 0 0;
-	width: 80px;
-	height:60px;
-	position: fixed; 
-	top: 15px; 
-	right: 18px; 
-	
-}
-.entry-header #nav-btn #line_1{
-	background-color: #420056; 
-	border-radius: 2px;
-	width: 60px;
-	height:5px;
-	position: fixed; 
-	top: 30px; 
-	right: 30px; 
-}
-.entry-header #nav-btn #line_2{
-	background-color: #420056; 
-	border-radius: 2px;
-	width: 60px;
-	height:5px;
-	position: fixed; 
-	top: 45px; 
-	right: 30px; 
-}
-.entry-header #nav-btn #line_3{
-	background-color: #420056; 
-	border-radius: 2px;
-	width: 60px;
-	height:5px;
-	position: fixed; 
-	top: 60px; 
-	right: 30px; 
-}
-
-#nav-list {
-    margin: 0 0 0 50px; 
-	padding: 0.8em;
->>>>>>> gh-pages
     text-align: center;
 	text-decoration: none;
 	font-weight: bold;
@@ -246,13 +189,10 @@ main {
     display: inline;
     margin: 1.2em; 
 	padding: 0;
-<<<<<<< HEAD
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-=======
->>>>>>> gh-pages
 }
 
 /*regular link*/
@@ -279,11 +219,7 @@ a:active {
 
 /* Slide 1 - Start*/
 #slide-start .bcg {
-<<<<<<< HEAD
 	background-image:url('../img/background_1.JPG');
-=======
-	background-image:url('../img/background.JPG');
->>>>>>> gh-pages
 }
 
 /* Slide 2 - Ueber Uns */
@@ -295,11 +231,7 @@ a:active {
 
 /* Slide 3 - Impressionen */ 
 #slide-impressionen .bcg{
-<<<<<<< HEAD
 	background-image:url('../img/background.JPG');
-=======
-	background-image:url('../img/1.jpg');
->>>>>>> gh-pages
 	text-align: justify;
 }
 .impressionen{
@@ -351,11 +283,7 @@ only screen and (max-width: 800px),
 	#mug2{
 		width:95%;
 		margin:1%;
-<<<<<<< HEAD
 	}	
-=======
-}	
->>>>>>> gh-pages
 }
 
 /* Slide 4 - Veranstaltungen*/
@@ -383,20 +311,10 @@ only screen and (max-width: 800px),
 	margin-top: 50px;
 }
 
-<<<<<<< HEAD
 /* Slide 5 - Vegan*/
 #slide-vegan .bcg {
 	background-image:url('../img/background_2.JPG');
 	text-align: justify;
-=======
-
-
-/* Slide 5 - Vegan*/
-#slide-vegan .bcg {
-	background-image:url('../img/1.jpg');
-	text-align: justify;
-	
->>>>>>> gh-pages
 }
 
 .vegan{
@@ -411,16 +329,11 @@ only screen and (max-width: 800px),
 	background-color:#99ff00;
 }
 
-<<<<<<< HEAD
 .arrow{
-=======
-#leftarrow{
->>>>>>> gh-pages
 	width:15%;
 	max-width:200px;
 	position: fixed;
 	top:50%;
-<<<<<<< HEAD
 	opacity: 0.6;
 }
 
@@ -436,21 +349,6 @@ only screen and (max-width: 800px),
 }
 
 
-=======
-	left:-2%;
-	opacity: 0.3;
-}
-
-#rightarrow{
-	width:15%;
-	max-width:200px;
-	position: fixed;
-	top:50%;
-	right:-2%;
-	opacity: 0.3;
-}
-
->>>>>>> gh-pages
 #tbl-vegan{
 	border-style:solid;
 	margin:30px -10px 10px -10px;
@@ -545,11 +443,7 @@ only screen and (max-width: 850px),
 /* Slide 6 - Impressum */
 #slide-impressum .bcg {
 	background: none;
-<<<<<<< HEAD
 	background-color: rgb(240, 250, 240); 
-=======
-	background-color: #ffffff; 
->>>>>>> gh-pages
 	text-align: left;
 }
 
@@ -599,7 +493,6 @@ only screen and (max-width: 850px),
 		padding: 3px 10px;
 	}
 
-<<<<<<< HEAD
 @media 
 only screen and (max-width: 450px),
 (min-device-width: 455px) and (max-device-width: 450px)  {
@@ -613,11 +506,6 @@ only screen and (max-width: 450px),
 		font-size: 19px;
 	}
 }
-=======
-
-
-
->>>>>>> gh-pages
 
 
 
